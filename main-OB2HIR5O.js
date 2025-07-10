@@ -1,0 +1,1 @@
+import{Aa as n,Db as m,ia as r,lb as p,ob as i}from"./chunk-CYPUUF2W.js";import"./chunk-ACKELEN3.js";var c=(()=>{let t=class t{};t.\u0275fac=function(e){return new(e||t)},t.\u0275cmp=r({type:t,selectors:[["app-root"]],decls:1,vars:0,template:function(e,s){e&1&&n(0,"router-outlet")},dependencies:[i],encapsulation:2});let o=t;return o})();p(c,m).catch(o=>console.error(o));

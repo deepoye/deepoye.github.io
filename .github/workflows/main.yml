@@ -29,12 +29,14 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Build Angular App
+        run: npm run build
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Deploy to gh pages
         run: |
           echo Add other actions to build,
+          npx angular-cli-ghpages --dir=dist/your-angular-app
           echo test, and deploy your project.
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}  

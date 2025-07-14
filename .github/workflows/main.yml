@@ -34,9 +34,7 @@ jobs:
 
       - name: Deploy to gh pages
         run: |
-          echo Add other actions to build,
-          npx angular-cli-ghpages --dir=dist/your-angular-app
-          echo test, and deploy your project.
+          npx angular-cli-ghpages --dir=dist/angularstart-chat
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}  
